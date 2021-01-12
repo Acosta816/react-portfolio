@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import Avatar from './components/Avatar/Avatar';
+import Header from './components/Header/Header';
+// import { ReactComponent as Cloud } from './components/Cloud/cloud.svg';
+import Menu from './components/MobileMenu/Menu';
+import ProjectsContiner from './components/ProjectsContainer/ProjectsContainer.component';
+import WaterDrop from './components/WaterDrop.component';
+import Waterfall from './components/Waterfall.component';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Waterfall />
+      <main className="main">
+        <ProjectsContiner />
+      </main>
     </div>
   );
 }

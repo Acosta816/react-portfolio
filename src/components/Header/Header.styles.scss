@@ -1,0 +1,62 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 30px;
+    margin-bottom: 30px;
+}
+
+.intro {
+    font-size: 1.2rem;
+    text-align: center;
+    position: relative;
+    text-shadow: 0 0 6px white;
+    color: lightgray;
+    top: -54px;
+}
+
+.hi {
+    position: absolute;
+    top: 105px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    animation: disappear 1.3s 2.5s forwards ;
+  }
+  
+  .im {
+    position: absolute;
+    top: 105px;
+    left: 0px;
+    right: 0;
+    text-align: center;
+    opacity: 0;
+    animation: disappear 4.5s 3.5s forwards;
+  }
+  
+  .david {
+    top: -11px;
+    right: 77px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 12px white;
+    opacity: 0;
+    animation: appear 3s 4.7s forwards;
+  }
+  
+  .acosta {
+    text-align: center;
+    top: -55px;
+    left: 55px;
+    color: white;
+    text-shadow: 0 0 12px white;
+    opacity: 0;
+    animation: appear 3s 5.5s forwards;
+  }
+  
+  .acosta, .david {
+    position: relative;
+    font-weight: lighter;
+    font-size: 2.5rem;
+  }
+
