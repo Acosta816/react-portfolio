@@ -1,0 +1,55 @@
+// best seen at 1500px or less
+
+.ocean { 
+//!!!!!!!!!!!!@MEDIA change height as you go up
+height: 184px;
+/* border: solid 2px red; */
+width: 100%;
+position: relative;
+top: 0px;
+left: 0;
+opacity: 0;
+/* margin-top: 147px; */
+animation: appear 8s 8s forwards;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: relative;
+  bottom: 0px;
+  width: 6400px;
+  height: 184px;
+  animation: wave 12s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  /* transform: translate3d(0, 0, 0);*/
+}
+
+.wave:nth-of-type(2) {
+  bottom: 3px;
+  position: absolute;
+  animation: wave 5s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite, swell 6s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
+}
+
+@media (min-width: 540px) {
+ body {
+  //  background: orange;
+ }
+}

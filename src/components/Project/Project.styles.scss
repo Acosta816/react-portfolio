@@ -1,0 +1,17 @@
+.project {
+display: flex;
+flex-direction: column;
+}
+
+.project-image-container {
+    width: 100%;
+}
+
+.project-image {
+    width: 50%;
+}
+
+.project-summary {
+    font-size: 1.6rem;
+    font-weight: 200;
+}

@@ -13,10 +13,12 @@
 }
 
 main {
+  background: linear-gradient(180deg, #015871 39px, #474747 90%);
+  color: white;
   background-color: #015871;
   display: flex;
-  padding: 32px 30px;
-  margin-top: 182px;
+  /* padding: 32px 30px; */
+  /* margin-top: 182px; */
   opacity: 0;
   animation: appear 8s 8s forwards;
 }

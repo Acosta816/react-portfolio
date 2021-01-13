@@ -3,8 +3,8 @@ import './Header.styles.scss';
 
 import Avatar from '../Avatar/Avatar';
 import Menu from '../MobileMenu/Menu';
-import WaterDrop from '../WaterDrop.component';
-import Waterfall from '../Waterfall.component';
+import WaterDrop from '../WaterDrop/WaterDrop.component';
+import Waterfall from '../Ocean/Waterfall.component';
 
 const Header = () => {
     return (
