@@ -17,6 +17,7 @@ main {
   color: white;
   background-color: #015871;
   display: flex;
+  flex-direction: column;
   /* padding: 32px 30px; */
   /* margin-top: 182px; */
   opacity: 0;

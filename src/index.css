@@ -1,4 +1,7 @@
 /* body, html, #root, .App { height: 100%; } */
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;

@@ -1,3 +1,9 @@
+nav {
+  top: 22px;
+  z-index: 100;
+  position: fixed;
+  left: 22px;
+}
 
 #menuToggle
 {
@@ -107,12 +113,11 @@
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 220px;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
-  
-  background: #ededed;
+  padding: 120px 0px 5px 50px;
+  background: #3f3f3ffa;
+  border-radius: 13px;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -127,6 +132,8 @@
 {
   padding: 10px 0;
   font-size: 22px;
+  font-weight: 100;
+  color: white;
 }
 
 /*
