@@ -29,7 +29,7 @@ const ProjectsContiner = () => {
 
     return (
         <div className='projects-container'>
-            <h2 className="title">PR<span className="project-gear">⚙</span>JECTS</h2>
+            <h2 id="projects" className="title">PR<span className="project-gear">⚙</span>JECTS</h2>
             <hr />
             <p className="category-summary">
                 Various projects I've completed both alone and on a team using technologies such as React, Redux, MongoDB, Mongoose, Express, Firebase, HTML, CSS, Sass, Javascript, JQuery etc...

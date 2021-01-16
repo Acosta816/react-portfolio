@@ -1,4 +1,5 @@
 
+import React from 'react';
 import './App.css';
 import Avatar from './components/Avatar/Avatar';
 import Header from './components/Header/Header';
@@ -8,18 +9,55 @@ import ProjectsContiner from './components/ProjectsContainer/ProjectsContainer.c
 import WaterDrop from './components/WaterDrop/WaterDrop.component';
 import Waterfall from './components/Ocean/Waterfall.component';
 import AboutMe from './components/About Me/AboutMe.component';
-function App() {
-  return (
-    <div className="App">
-      <Menu />
-      <Header />
-      <Waterfall />
-      <main className="main">
-        <ProjectsContiner />
-        <AboutMe />
-      </main>
-    </div>
-  );
+import Bubbles from './components/Bubbles/Bubbles.component';
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      menuIsOpen: false,
+      appClicked: false,
+    }
+  }
+
+  updateAppState = (isMenuOpen) => {
+    console.log(isMenuOpen);
+    this.setState((ps) =>
+      ({ menuIsOpen: isMenuOpen })
+    )
+  }
+
+  appIsClicked = () => {
+    if (this.state.menuIsOpen && (this.state.appClicked === false)) {
+      this.setState({ appClicked: true })
+    }
+    else {
+      return
+    }
+  }
+
+  onInputChange = () => {
+    this.setState((prevState) =>
+      ({ menuIsOpen: !prevState.menuIsOpen }),
+      () => console.log(this.state.menuIsOpen)
+    )
+
+  }
+
+  render() {
+    return (
+      <div onClick={this.appIsClicked} className="App">
+        <Menu onInputChange={this.onInputChange} menuIsOpen={this.state.menuIsOpen} />
+        <Header />
+        <Waterfall />
+        <main className="main">
+          <ProjectsContiner />
+          <AboutMe />
+        </main>
+        {this.state.menuIsOpen ? <Bubbles /> : null}
+      </div>
+    );
+  }
+
 }
 
 export default App;
