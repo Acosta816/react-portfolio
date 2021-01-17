@@ -6,6 +6,8 @@ const ProjectsContiner = () => {
     const projectData = [
         {
             title: "Build-A-Burger (WEB APP)",
+            classProp: "burger-app",
+            hrefTarget: "burger-desc",
             liveLink: "https://react-my-burger-3f060.web.app/",
             tech: ["React", "Redux", "Firebase"],
             summary: "A scalable React-based Custom Burger Building Application featuring the ability to add/remove ingredients, place order with user info and send to a realtime database hosted on Google's Firebase. The app itself is also hosted on Firebase!",
@@ -13,6 +15,7 @@ const ProjectsContiner = () => {
         },
         {
             title: "Crown Clothing (Ecommerce)",
+            hrefTarget: "crown-desc",
             liveLink: "https://crown-clothing-live-ltd.herokuapp.com/",
             tech: ["React", "Redux", "Firebase", "StripeAPI"],
             summary: "Eccomerce Clothing SPA React website boasting a fully operating cart and payout featuring the stripeAPI.",
@@ -20,6 +23,7 @@ const ProjectsContiner = () => {
         },
         {
             title: "VANILLA JS VIRTUAL PET FOX (WebApp Game)",
+            hrefTarget: "fox-desc",
             liveLink: "https://fox-game-vanillajs.firebaseapp.com/",
             tech: ["HTML", "css", "JAVASCRIPT", "PARCEL(build/bundling)"],
             summary: 'A "Tamagotchi"-inspired virtual pet simulator made entirely in Vanilla JS and hosted on Google Firebase!',

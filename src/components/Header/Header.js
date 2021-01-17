@@ -16,7 +16,10 @@ const Header = () => {
             <h1 className="david">DAVID</h1>
             <h1 className="acosta">ACOSTA</h1>
             <p className="intro">
-                Welcome to my Portfolio. I am a full stack developer. I love people, technology, and nature. Take a dive with me and sea what we can accomplish together.
+                Welcome to my Portfolio. I am a full stack developer.
+                I love people, technology, and nature.
+                Take a dive with me and <span className="sea-word">sea</span> what we can accomplish
+                together.
 </p>
         </div >
     )

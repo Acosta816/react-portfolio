@@ -19,6 +19,12 @@
     opacity: 0;
     animation: appear 8s 8s forwards;
 
+    span {
+      color: #00ffffb0;
+      font-weight: 700;
+      text-shadow: 0 0 11px #87f5fb;
+    }
+
 }
 
 .hi {

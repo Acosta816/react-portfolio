@@ -4,10 +4,6 @@
     align-items: center;
 }
 
-.project:hover {
-    cursor: pointer;
-}
-
 .project-info-container {
     width: 100%;
     padding-left: 3px;
@@ -19,6 +15,18 @@
 
 .project-image {
     width: 50%;
+    box-shadow: 5px 4px 5px black;
+    border-radius: 18px;
+    &.burger-app {
+        width: auto;
+        height: 220px;
+    }
+
+    &:hover {
+        box-shadow:none;
+        border: solid 1px rgba(78, 171, 246, 0.801);
+        cursor: pointer;
+    }
 }
 
 .project-summary {

@@ -16,14 +16,24 @@ class Project extends React.Component {
         })
     }
 
+    autoScroll = () => {
+        if (!this.state.isClicked) {
+            console.log(this.props.project.hrefTarget)
+            // document.getElementById("burger-desc").scrollIntoView({ block: "center" });
+            setTimeout(() => {
+                document.getElementById(this.props.project.hrefTarget).scrollIntoView({ block: "center" });
+            }, 100)
+        } return
+    }
+
     render() {
-        const { title, imageUrl, summary, tech, liveLink } = this.props.project;
+        const { title, imageUrl, summary, tech, liveLink, classProp, hrefTarget } = this.props.project;
 
         return (
             <div onClick={this.toggleVisibility} className="project">
                 <h3 className="project-title">{title}</h3>
-                <img className="project-image" src={imageUrl} alt="blahhh" />
-                <div className={`project-info-container ${this.state.isClicked ? null : "hidden"}`}>
+                <img onClick={() => this.autoScroll()} className={`project-image ${classProp}`} src={imageUrl} alt="blahhh" />
+                <div id={hrefTarget} className={`project-info-container ${this.state.isClicked ? null : "hidden"}`}>
                     <p className="project-summary">{summary}</p>
                     <p>Technologies used: {(tech.map(t => t))}</p>
                     <div className="project-links">
