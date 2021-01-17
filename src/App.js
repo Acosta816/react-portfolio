@@ -10,6 +10,7 @@ import WaterDrop from './components/WaterDrop/WaterDrop.component';
 import Waterfall from './components/Ocean/Waterfall.component';
 import AboutMe from './components/About Me/AboutMe.component';
 import Bubbles from './components/Bubbles/Bubbles.component';
+import NewBubbles from './components/otherBubbles/NewBubbles';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -53,7 +54,7 @@ class App extends React.Component {
           <ProjectsContiner />
           <AboutMe />
         </main>
-        {this.state.menuIsOpen ? <Bubbles /> : null}
+        {this.state.menuIsOpen ? <NewBubbles numberOfBubbles={14} /> : null}
       </div>
     );
   }
