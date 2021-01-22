@@ -4,11 +4,11 @@ import './AboutMe.styles.scss';
 
 const AboutMe = () => {
     return (
-        <div className="about-me-container">
-            <h2 className="title">ABOÜT</h2>
+        <div id="about-me" className="about-me-container">
+            <h2 className="about-me-title">ABOÜT</h2>
             <hr />
             <p className="about-me">
-                "Hello, thank you for visiting my site. My name is David.
+                Hello, thank you for visiting my site. My name is David.
                 I am a devoted programmer who specializes in making modern webapps.
                 My love for technology and creation bagan when I
                 was 7 and discovered <a rel="noreferrer" target="_blank" href="https://www.adobe.com/products/animate.html#scroll"><span className="adobe">Adobe flash</span></a>.
@@ -28,7 +28,7 @@ const AboutMe = () => {
                 software that can help the disabled communicate easier with the rest of the world.
                 I am still actively learning and am currently deeply interested in the world of
                 gamified learning as well as other forms of alternative learning. I feel it will lead us
-                to a new paradigm and I look forward to being a part of that."
+                to a new paradigm and I look forward to being a part of that.
             </p>
         </div>
     );

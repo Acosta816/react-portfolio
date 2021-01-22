@@ -11,6 +11,7 @@ import Waterfall from './components/Ocean/Waterfall.component';
 import AboutMe from './components/About Me/AboutMe.component';
 import Bubbles from './components/Bubbles/Bubbles.component';
 import NewBubbles from './components/otherBubbles/NewBubbles';
+import { Contact } from './components/Contact/Contact.component';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -57,7 +58,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="monkey" onClick={this.appIsClicked} className="App">
+      <div id="home" onClick={this.appIsClicked} className="App">
         <button id="pumpkin" className="pumpkin" onClick={() => this.skipAnimation()}>>>skip</button>
         <Menu onInputChange={this.onInputChange} menuIsOpen={this.state.menuIsOpen} />
         <Header />
@@ -65,6 +66,7 @@ class App extends React.Component {
         <main id="Main" className="main" >
           <ProjectsContiner />
           <AboutMe />
+          <Contact />
         </main>
         {this.state.menuIsOpen ? <NewBubbles numberOfBubbles={14} /> : null}
       </div>

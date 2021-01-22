@@ -10,9 +10,9 @@ const Menu = ({ onInputChange, menuIsOpen }) => (
             <span></span>
             <ul id="menu">
                 {menuIsOpen ? <div onClick={() => onInputChange()} className="modal"></div> : null}
-                <a href="#" onClick={() => onInputChange()}><li>HOME</li></a>
+                <a href="#home" onClick={() => onInputChange()}><li>HOME</li></a>
                 <a href="#projects" onClick={() => onInputChange()}><li>PROJECTS</li></a>
-                <a href="#about" onClick={() => onInputChange()}><li>ABOUT</li></a>
+                <a href="#about-me" onClick={() => onInputChange()}><li>ABOUT</li></a>
                 <a href="#connect" onClick={() => onInputChange()}><li>Let's Connect</li></a>
             </ul>
         </div>
