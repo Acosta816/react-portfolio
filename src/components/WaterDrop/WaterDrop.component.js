@@ -4,8 +4,8 @@ import './waterdrop.styles.scss';
 const waterDrop = () => {
     return (
         <>
-            <div className="drop-container">
-                <div className="drop">
+            <div id="drop-container" className="drop-container">
+                <div id="Drop" className="drop">
                 </div>
             </div>
         </>

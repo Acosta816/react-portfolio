@@ -8,17 +8,18 @@ import Waterfall from '../Ocean/Waterfall.component';
 
 const Header = () => {
     return (
-        <div className="header">
+        <div id="Header" className="header">
             <WaterDrop />
             <h2 className="hi">Hi</h2>
-            <h2 className="im">...I'm </h2>
+            {            false === true ? <h2 className="im">...I'm </h2> : null}
             <Avatar />
             <h1 className="david">DAVID</h1>
             <h1 className="acosta">ACOSTA</h1>
             <p className="intro">
-                Welcome to my Portfolio. I am a full stack developer.
-                I love people, technology, and nature.
-                Take a dive with me and <span className="sea-word">sea</span> what we can accomplish
+                Full stack developer.
+                Love people, technology, and nature.
+                <br />
+                Come take a dive with me and <span className="sea-word">sea</span> what we can accomplish
                 together.
 </p>
         </div >

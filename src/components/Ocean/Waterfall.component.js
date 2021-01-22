@@ -3,7 +3,7 @@ import './waterfall.styles.scss';
 
 const Waterfall = () => {
     return (
-        <div className="ocean">
+        <div id="ocean" className="ocean ocean-transition">
             <div className="wave"></div>
             <div className="wave"></div>
         </div>

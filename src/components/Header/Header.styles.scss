@@ -17,7 +17,7 @@
     color: lightgray;
     // top: -54px;
     opacity: 0;
-    animation: appear 8s 8s forwards;
+    animation: appear 8s 7s forwards;
 
     span {
       color: #00ffffb0;
@@ -37,15 +37,15 @@
     animation: disappear 1.3s 2.5s forwards ;
   }
   
-  .im {
-    position: absolute;
-    top: 105px;
-    left: 0px;
-    right: 0;
-    text-align: center;
-    opacity: 0;
-    animation: disappear 4.5s 3.5s forwards;
-  }
+  // .im {
+  //   position: absolute;
+  //   top: 105px;
+  //   left: 0px;
+  //   right: 0;
+  //   text-align: center;
+  //   opacity: 0;
+  //   animation: disappear 4.5s 3.5s forwards;
+  // }
   
   .david {
     /* top: 0px; */

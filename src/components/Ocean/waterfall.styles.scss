@@ -10,7 +10,14 @@ top: 0px;
 left: 0;
 opacity: 0;
 /* margin-top: 147px; */
-animation: appear 8s 8s forwards;
+}
+
+.ocean-transition {
+  animation: appear 8s 8s forwards;
+}
+
+.speedup-ocean {
+  animation: appear 1s 1s forwards;
 }
 
 .wave {

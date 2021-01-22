@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-
 .App {
   display: flex;
   flex-direction: column;
@@ -12,6 +11,23 @@
   height: 100%;
 }
 
+.skip {
+  // animation: appear 1s 1s forwards;
+  animation: none;
+  opacity: 1;
+  & h1, .intro, .avatar-container {
+    animation: none;
+    opacity: 1;
+  }
+  & .hi, .drop-container,.drop-container:before, .drop-container:after  {
+    animation: none;
+    visibility: hidden;
+  }
+}
+.hide {
+  visibility: hidden;
+}
+
 main {
   background: linear-gradient(180deg, #015871 39px, #474747 90%);
   color: white;
@@ -19,9 +35,20 @@ main {
   display: flex;
   flex-direction: column;
   /* padding: 32px 30px; */
+  padding: 5px 12px;
   /* margin-top: 182px; */
   opacity: 0;
   animation: appear 8s 8s forwards;
+}
+
+.pumpkin {
+  background: transparent;
+  position: absolute;
+  color: white;
+  top: 18px;
+  right: 14px;
+  opacity: 0;
+  animation: disappear 9s  forwards;
 }
 
 /* .cloud {

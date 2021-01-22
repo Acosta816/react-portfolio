@@ -1,6 +1,6 @@
 
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Avatar from './components/Avatar/Avatar';
 import Header from './components/Header/Header';
 // import { ReactComponent as Cloud } from './components/Cloud/cloud.svg';
@@ -44,13 +44,25 @@ class App extends React.Component {
 
   }
 
+  skipAnimation = () => {
+    document.getElementById("Main").classList.add("skip"); //speedup main content transition
+    document.getElementById("drop-container").classList.add("skip"); //hide water drop
+    document.getElementById("Header").classList.add("skip");
+    // document.getElementById("avatar-container").classList.add("skip");
+    document.getElementById("ocean").classList.replace("ocean-transition", "speedup-ocean"); //speedup waves avatar-container
+    document.getElementById("pumpkin").classList.add("hide");
+
+
+  }
+
   render() {
     return (
-      <div onClick={this.appIsClicked} className="App">
+      <div id="monkey" onClick={this.appIsClicked} className="App">
+        <button id="pumpkin" className="pumpkin" onClick={() => this.skipAnimation()}>>>skip</button>
         <Menu onInputChange={this.onInputChange} menuIsOpen={this.state.menuIsOpen} />
         <Header />
         <Waterfall />
-        <main className="main">
+        <main id="Main" className="main" >
           <ProjectsContiner />
           <AboutMe />
         </main>
