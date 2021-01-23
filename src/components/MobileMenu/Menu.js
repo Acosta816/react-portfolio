@@ -13,7 +13,7 @@ const Menu = ({ onInputChange, menuIsOpen }) => (
                 <a href="#home" onClick={() => onInputChange()}><li>HOME</li></a>
                 <a href="#projects" onClick={() => onInputChange()}><li>PROJECTS</li></a>
                 <a href="#about-me" onClick={() => onInputChange()}><li>ABOUT</li></a>
-                <a href="#connect" onClick={() => onInputChange()}><li>Let's Connect</li></a>
+                <a href="#connect" onClick={() => onInputChange()}><li>CONTACT</li></a>
             </ul>
         </div>
     </nav>

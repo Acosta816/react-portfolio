@@ -3,6 +3,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+
+    hr {
+        margin-bottom: 50px;
+    }
 }
 
 
@@ -12,4 +16,83 @@
     font-weight: 300;
     margin-bottom: 25px;
     font-style: normal;
+}
+
+.links-container {
+    border-top-left-radius: 100%;
+    border-top-right-radius: 100%;
+    width: 150%;
+    align-self: center;
+    background: url(https://i.ibb.co/fNVsQs5/single-seaweed.gif), linear-gradient(180deg, #886e4e, #371a09);
+    background-position-x: 169px;
+}
+
+
+.links {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    /* text-align: center; */
+    justify-content: space-evenly;
+
+    li {
+        border: solid 1px white;
+        background: linear-gradient(45deg, #484848, white);
+        border-radius: 50%;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        align-items: center;
+        box-shadow: 3px 14px 11px 0px #00000069;
+    }
+    .fa {
+        transform: scale(2.5, 2.5);
+        &.linked-in {
+            color: rgb(0, 83, 139);
+        }
+        &.github {
+            color: rgb(0, 83, 139);
+        }
+    }
+}
+
+.up-arrow-container {
+    position: relative;
+    /* padding: 30px; */
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    align-items: center;
+    background-color: #9e9e9e;
+    justify-content: center;
+    padding-top: 3px;
+    width: 69px;
+    /* border: 1px solid black; */
+    box-shadow: 0px 11px 20px 0px black;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 69px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.up-arrow {
+    transform: scale(4.5, 4.5);
+    color: #00538b;
+}
+
+.info{
+    margin-top: 30px;
+}
+
+.contact-email {
+    color: white;
+    text-decoration: none;
+    font-size: 1.4rem;
+    text-shadow: 0px 20px 13px black;
 }
