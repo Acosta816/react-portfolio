@@ -3,7 +3,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-
+    background: url(https://i.ibb.co/c8PBrXT/ezgif-com-gif-maker-3.gif);
+    background-position-x: -35px;
+    background-size: 189px;
+    background-repeat: no-repeat;
     hr {
         margin-bottom: 50px;
     }
@@ -23,8 +26,9 @@
     border-top-right-radius: 100%;
     width: 150%;
     align-self: center;
-    background: url(https://i.ibb.co/fNVsQs5/single-seaweed.gif), linear-gradient(180deg, #886e4e, #371a09);
+    background: url(https://i.ibb.co/GJR2xk7/ezgif-com-gif-maker-2.gif), linear-gradient(180deg, #886e4e, #371a09);
     background-position-x: 169px;
+    background-repeat: no-repeat, repeat;
 }
 
 
