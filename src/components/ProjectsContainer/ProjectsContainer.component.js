@@ -15,6 +15,7 @@ const ProjectsContiner = () => {
         },
         {
             title: "Crown Clothing (Ecommerce)",
+            classProp: "crown-clothing",
             hrefTarget: "crown-desc",
             liveLink: "https://crown-clothing-live-ltd.herokuapp.com/",
             tech: ["React", "Redux", "Firebase", "StripeAPI"],
@@ -23,17 +24,18 @@ const ProjectsContiner = () => {
         },
         {
             title: "VANILLA JS VIRTUAL PET FOX (WebApp Game)",
+            classProp: "fox-game",
             hrefTarget: "fox-desc",
             liveLink: "https://fox-game-vanillajs.firebaseapp.com/",
-            tech: ["HTML", "css", "JAVASCRIPT", "PARCEL(build/bundling)"],
+            tech: ["HTML", "CSS", "JAVASCRIPT", "PARCEL"],
             summary: 'A "Tamagotchi"-inspired virtual pet simulator made entirely in Vanilla JS and hosted on Google Firebase!',
             imageUrl: "https://i.ibb.co/KxhpchC/larger-fox-game-vanillajs-firebaseapp-com-i-Pad-idle.jpg"
         }
     ]
 
     return (
-        <div className='projects-container'>
-            <h2 id="projects" className="project-container-title">PR<span className="project-gear">⚙</span>JECTS</h2>
+        <div id="projects" className='projects-container'>
+            <h2 className="project-container-title">PR<span className="project-gear">⚙</span>JECTS</h2>
             <hr />
             <p className="category-summary">
                 Various projects I've completed both alone and on a team using technologies such as React, Redux, MongoDB, Mongoose, Express, Firebase, HTML, CSS, Sass, Javascript, JQuery etc...

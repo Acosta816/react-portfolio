@@ -2,7 +2,7 @@ import React from 'react'
 import './Menu.styles.scss';
 
 const Menu = ({ onInputChange, menuIsOpen }) => (
-    <nav role="navigation">
+    <nav className="mobile-nav" role="navigation">
         <div id="menuToggle">
             <input onChange={() => onInputChange()} type="checkbox" checked={menuIsOpen} />
             <span></span>

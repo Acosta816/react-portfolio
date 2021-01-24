@@ -35,7 +35,7 @@ class Project extends React.Component {
                 <img onClick={() => this.autoScroll()} className={`project-image ${classProp}`} src={imageUrl} alt="blahhh" />
                 <div id={hrefTarget} className={`project-info-container ${this.state.isClicked ? null : "hidden"}`}>
                     <p className="project-summary">{summary}</p>
-                    <p>Technologies used: {(tech.map(t => t))}</p>
+                    <p className="tech-used">Technologies used: {(tech.map(t => t))}</p>
                     <div className="project-links">
                         <p><a href={liveLink} rel="noreferrer" target="_blank">LIVE DEMO</a></p>
                     </div>

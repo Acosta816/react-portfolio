@@ -101,3 +101,27 @@
 
 
   }
+  //--------------------------
+
+  @media (min-width: 400px) {
+    .intro {
+      text-align: center;
+      max-width: 287px;
+    }
+
+    .links-container {
+      background-position-x: 218px;
+  }
+
+  }
+
+  @media (min-width: 1025px) {
+    .header {
+      padding: 68px 30px;
+      margin-top: 40px;
+    }
+
+    .hi {
+      top: 175px;
+    }
+  }

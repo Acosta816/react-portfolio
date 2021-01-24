@@ -51,69 +51,45 @@ main {
   animation: disappear 9s  forwards;
 }
 
-/* .cloud {
-  z-index: 8;
-  position: absolute;
-  width: 111%;
-  right: 91px;
-  top: 16px;
-} */
 
-/* nav {
-  text-align: right;
-  display: flex;
-  top: 0;
-  width: 100%;
-  left: 0;
-  padding-left: 18px;
-  padding-top: 13px;
-  margin-left: -6px;
-  padding-bottom: 15px;
-  position: fixed;
-  z-index: 100;
-} */
 
-/* .hi {
-  position: absolute;
-  top: 105px;
-  left: 0px;
-  right: 0;
-  text-align: center;
-  opacity: 0;
-  animation: disappear 1.3s 2.5s forwards ;
+@media (min-width: 400px) {
+  .main {
+    padding: 5px 20px;
+  }
+
+
 }
 
-.im {
-  position: absolute;
-  top: 105px;
-  left: 0px;
-  right: 0;
-  text-align: center;
-  opacity: 0;
-  animation: disappear 4.5s 3.5s forwards;
+
+@media (min-width: 500px) {
+  .main {
+    padding: 5px 50px;
+  }
+
+
 }
 
-.david {
-  position: relative;
-  bottom: 87px;
-  right: 88px;
-  color: white;
-  text-shadow: 0 0 12px white;
-  opacity: 0;
-  animation: appear 3s 4.7s forwards;
+@media (min-width: 960px) {
+  .main {
+    padding: 5px 116px;
+  }
 }
 
-.acosta {
-  position: relative;
-  bottom: 126px;
-  left: 61px;
-  color: white;
-  text-shadow: 0 0 12px white;
-  opacity: 0;
-  animation: appear 3s 5.5s forwards;
+@media (min-width: 1024px) {
+  .main {
+    padding: 5px 162px;
+  }
+
+  .pumpkin {
+    top: 70px;
+    left: 14px;
+  }
+
 }
 
-.acosta, .david {
-  font-weight: lighter;
-  font-size: 3.4rem;
-} */
+// @media (max-width: 1300px) {
+//   .main {
+//     padding: 5px 
+//   }
+// }

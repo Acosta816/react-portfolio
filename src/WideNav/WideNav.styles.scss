@@ -1,0 +1,38 @@
+
+
+.wide-nav {
+    display: none;
+}
+
+@media (min-width: 1025px) {
+    .wide-nav {
+        background-color: #535f68;
+        top: 0px;
+        border: 1px solid grey;
+    width: 100%;
+    left: 0px;
+    position: fixed;
+    padding-left: 45px;
+    text-decoration: none;
+    text-underline-position: under;
+    align-items: center;
+    height: 40px;
+    font-size: 1.2rem;
+    padding-right: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    animation: appear 8s 8s forwards;
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    }
+
+    .skip {
+        animation: none;
+        opacity: 1;
+    }
+}
+

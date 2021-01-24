@@ -12,6 +12,7 @@ import AboutMe from './components/About Me/AboutMe.component';
 import Bubbles from './components/Bubbles/Bubbles.component';
 import NewBubbles from './components/otherBubbles/NewBubbles';
 import { Contact } from './components/Contact/Contact.component';
+import WideNav from './WideNav/WideNav.component';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -47,6 +48,7 @@ class App extends React.Component {
 
   skipAnimation = () => {
     document.getElementById("Main").classList.add("skip"); //speedup main content transition
+    document.getElementById("WideNav").classList.add("skip"); //speedup main content transition
     document.getElementById("drop-container").classList.add("skip"); //hide water drop
     document.getElementById("Header").classList.add("skip");
     // document.getElementById("avatar-container").classList.add("skip");
@@ -60,6 +62,7 @@ class App extends React.Component {
     return (
       <div id="home" onClick={this.appIsClicked} className="App">
         <button id="pumpkin" className="pumpkin" onClick={() => this.skipAnimation()}>>>skip</button>
+        <WideNav />
         <Menu onInputChange={this.onInputChange} menuIsOpen={this.state.menuIsOpen} />
         <Header />
         <Waterfall />

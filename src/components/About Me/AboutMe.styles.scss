@@ -20,6 +20,7 @@
         color: black;
         margin-top: 10px;
         margin-bottom: 44px;
+        max-width: 600px;
     }
 }
 
@@ -34,12 +35,43 @@
 .about-me {
     margin-top: 5px;
     margin-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-size: 1.4em;
     font-weight: 200;
-    line-height: 1.2;
+    line-height: 1.5;
     text-align: left;
+    max-width: 750px;
 }
 
 .adobe {
     color: #ff7500;
+}
+
+
+@media (min-width: 400px) {
+    .links-container {
+      background-position-x: 218px;
+  }
+
+}
+
+@media (min-width: 600px) {
+    .about-me {
+        font-size: 1.7em;
+    }
+
+}
+
+@media (min-width: 700px) {
+    .about-me-title {
+        font-size: 50px;
+
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-me-container {
+        padding-top: 30px;
+    }
 }

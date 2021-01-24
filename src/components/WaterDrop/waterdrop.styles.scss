@@ -102,3 +102,9 @@
       opacity: 0;
     }
   }
+
+  @media (min-width: 1025px) {
+    div.drop-container {
+      top: 108px;
+  }
+}
