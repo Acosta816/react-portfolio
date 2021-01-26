@@ -2,9 +2,7 @@ import React from 'react';
 import './Header.styles.scss';
 
 import Avatar from '../Avatar/Avatar';
-import Menu from '../MobileMenu/Menu';
 import WaterDrop from '../WaterDrop/WaterDrop.component';
-import Waterfall from '../Ocean/Waterfall.component';
 
 const Header = () => {
     return (
@@ -21,7 +19,8 @@ const Header = () => {
                 <br />
                 Come take a dive with me and <span className="sea-word">sea</span> what we can accomplish
                 together.
-</p>
+            </p>
+
         </div >
     )
 }

@@ -13,6 +13,7 @@ import Bubbles from './components/Bubbles/Bubbles.component';
 import NewBubbles from './components/otherBubbles/NewBubbles';
 import { Contact } from './components/Contact/Contact.component';
 import WideNav from './WideNav/WideNav.component';
+import Resume from './components/Resume/Resume.component';
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -53,6 +54,7 @@ class App extends React.Component {
     document.getElementById("Header").classList.add("skip");
     // document.getElementById("avatar-container").classList.add("skip");
     document.getElementById("ocean").classList.replace("ocean-transition", "speedup-ocean"); //speedup waves avatar-container
+    document.getElementById("resume").classList.replace("ocean-transition", "speedup-ocean"); //speedup waves avatar-container
     document.getElementById("pumpkin").classList.add("hide");
 
 
@@ -65,6 +67,7 @@ class App extends React.Component {
         <WideNav />
         <Menu onInputChange={this.onInputChange} menuIsOpen={this.state.menuIsOpen} />
         <Header />
+        <Resume />
         <Waterfall />
         <main id="Main" className="main" >
           <ProjectsContiner />
@@ -72,6 +75,7 @@ class App extends React.Component {
           <Contact />
         </main>
         {this.state.menuIsOpen ? <NewBubbles numberOfBubbles={14} /> : null}
+
       </div>
     );
   }

@@ -30,7 +30,7 @@ class Project extends React.Component {
         const { title, imageUrl, summary, tech, liveLink, classProp, hrefTarget } = this.props.project;
 
         return (
-            <div onClick={this.toggleVisibility} className="project">
+            <div onClick={this.toggleVisibility} className={`project ${this.state.isClicked ? "project-margin" : null}`}>
                 <h3 className="project-title">{title}</h3>
                 <img onClick={() => this.autoScroll()} className={`project-image ${classProp}`} src={imageUrl} alt="blahhh" />
                 <div id={hrefTarget} className={`project-info-container ${this.state.isClicked ? null : "hidden"}`}>

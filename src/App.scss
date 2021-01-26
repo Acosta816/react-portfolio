@@ -44,11 +44,20 @@ main {
 .pumpkin {
   background: transparent;
   position: absolute;
-  color: white;
+  color: #ffffff6b;
+  border: #ffffff6b 1px groove;
   top: 18px;
   right: 14px;
   opacity: 0;
   animation: disappear 9s  forwards;
+
+  &:hover{
+    color: #ffffffbf;
+    text-shadow: 0 0 8px #0297ff;
+    box-shadow: 0 0 8px 1px #01ceff;
+    background-color: #f0f8ff47;
+    border: #ffffff6b 1px groove;
+  }
 }
 
 

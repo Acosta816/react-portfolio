@@ -1,4 +1,5 @@
 import React from 'react'
+import Resume from '../Resume/Resume.component';
 import './waterfall.styles.scss';
 
 const Waterfall = () => {

@@ -1,0 +1,61 @@
+
+.resume {
+  width: 100%;
+  position: absolute;
+  top: 357px;
+  z-index: 1;
+  opacity: 0;
+}
+
+// text {
+//    transform="rotate(30 20,40)
+// }
+
+// footer div {
+//   background-color:#4478e3;
+//   margin: -5px 0px 0px 0px;
+//   padding:0px;
+//   color: #fff;
+//   text-align:center;
+// }
+.resume-svg {
+  width:100%;
+  height: 400px;
+}
+// .arrow {
+//   stroke-width: .3px;
+//   stroke:yellow;
+// }
+
+.ball {
+  fill: #4e0404;
+}
+
+.topball {
+  animation: ball 1.5s ease-in-out;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  // animation-delay: 0.3s;
+  animation-delay: 0.5s;
+  cursor:pointer;
+}
+
+
+
+.wave-main {
+  animation: waveish 3s linear;
+  animation-iteration-count:infinite;
+  fill: #03577059;
+}
+
+.gooeff {
+  	filter: url(#goo);
+}
+
+@keyframes waveish {
+  to {transform: translateX(-100%);}
+}
+@keyframes ball {
+  to {transform: translateY(20%);}
+}
+
