@@ -38,6 +38,7 @@ main {
   padding: 5px 12px;
   /* margin-top: 182px; */
   opacity: 0;
+  z-index: 1;
   animation: appear 8s 8s forwards;
 }
 

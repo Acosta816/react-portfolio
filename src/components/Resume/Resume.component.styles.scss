@@ -1,11 +1,22 @@
 
 .resume {
   width: 100%;
-  position: absolute;
-  top: 357px;
-  z-index: 1;
+  position: relative;
+  top: -59px;
   opacity: 0;
+  margin-bottom: -72px;
 }
+
+.resume-bottom-div {
+  background-color: #01313f;
+  /* border: solid 1px red; */
+  height: 300px;
+  width: 100vw;
+  /* bottom: 0px; */
+  position: absolute;
+  margin-top: -19px;
+}
+
 
 // text {
 //    transform="rotate(30 20,40)
@@ -20,7 +31,7 @@
 // }
 .resume-svg {
   width:100%;
-  height: 400px;
+  height: fit-content; //change this as device gets wider
 }
 // .arrow {
 //   stroke-width: .3px;
@@ -28,7 +39,14 @@
 // }
 
 .ball {
+  r: 8;
+  transform: translate(4%, -17%);
   fill: #4e0404;
+}
+
+.resume-text {
+  font-size: 0.4rem;
+  font-weight: 100;
 }
 
 .topball {
@@ -45,7 +63,7 @@
 .wave-main {
   animation: waveish 3s linear;
   animation-iteration-count:infinite;
-  fill: #03577059;
+  fill: #01313f;
 }
 
 .gooeff {
@@ -59,3 +77,98 @@
   to {transform: translateY(20%);}
 }
 
+
+@media (min-width: 500px) {
+
+  .resume {
+    margin-bottom: -58px;
+  }
+
+  .resume-text {
+    font-size: 6.4px;
+
+  }
+
+}
+
+
+@media (min-width: 600px) {
+
+  .resume-svg {
+    height: auto;
+  }
+
+  .ball {
+    r: 5;
+    transform: translate(4%, -4%);
+}
+
+  .resume-text {
+    font-size: 4.7px;
+    transform: translate(2%, 7%);
+  }
+
+}
+
+
+
+@media (min-width: 820px) {
+
+  .ball {
+    r: 4.5;
+    transform: translate(4%, -1%);
+  }
+  
+  .resume-text {
+    font-size: 3.4px;
+    transform: translate(3.5%, 10%);
+  }
+  
+}
+
+
+@media (min-width: 1020px) {
+
+  .ball {
+    r: 4;
+    transform: translate(4%, 3%);
+  }
+  
+  .resume-text {
+    font-size: 3px;
+    transform: translate(4%, 12%);
+  }
+  
+}
+
+@media (min-width: 1300px) {
+  
+  .resume-text {
+    font-size: 2.7px;
+    transform: translate(4.35%, 12%);
+  }
+  
+}
+
+@media (min-width: 1600px) {
+  
+  .resume-text {
+    font-size: 2.5px;
+    transform: translate(4.5%, 15%);
+  }
+  
+}
+
+@media (min-width: 1800px) {
+
+  .ball {
+    r: 3.4;
+    transform: translate(4%, 5%);
+  }
+  
+  .resume-text {
+    font-size: 2px;
+    transform: translate(5.2%, 16%);
+  }
+  
+}
