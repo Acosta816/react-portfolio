@@ -5,7 +5,17 @@ import './ProjectsContainer.styles.scss';
 const ProjectsContiner = () => {
     const projectData = [
         {
-            title: "Build-A-Burger (WEB APP)",
+            title: "Mappers (MERN WEB APP)",
+            mern: " mern",
+            classProp: "burger-app",
+            hrefTarget: "mappers-desc",
+            liveLink: "https://my-places-mern-2021.web.app/",
+            tech: ["Mongo", "Express", "React", "Node", "Mongoose", "ReactHooks"],
+            summary: "A social media SPA built with the MERN stack allowing for users to authenticate and share places they have been. Utilizing not only Google apis for the map and coordinate decrypter, but also supported by my own FULL CRUD REST API made with Node, Express, and Mogoose. The Database is supported by MongoDB's Atlas cloud service for full persistense and data manipulation. This React app utilizes all best modern practices and technologies ranging from routers to react hooks, lazy loading, and memory memoization/caching.",
+            imageUrl: "https://i.ibb.co/yqpjsrT/my-places-mern-2021-web-app-i-Phone-6-7-8-Plus.png"
+        },
+        {
+            title: "Build-A-Burger (React/Redux WEB APP)",
             classProp: "burger-app",
             hrefTarget: "burger-desc",
             liveLink: "https://react-my-burger-3f060.web.app/",

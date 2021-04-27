@@ -1,15 +1,15 @@
 
 import React from 'react';
 import './App.scss';
-import Avatar from './components/Avatar/Avatar';
+// import Avatar from './components/Avatar/Avatar';
 import Header from './components/Header/Header';
 // import { ReactComponent as Cloud } from './components/Cloud/cloud.svg';
 import Menu from './components/MobileMenu/Menu';
 import ProjectsContiner from './components/ProjectsContainer/ProjectsContainer.component';
-import WaterDrop from './components/WaterDrop/WaterDrop.component';
+// import WaterDrop from './components/WaterDrop/WaterDrop.component';
 import Waterfall from './components/Ocean/Waterfall.component';
 import AboutMe from './components/About Me/AboutMe.component';
-import Bubbles from './components/Bubbles/Bubbles.component';
+// import Bubbles from './components/Bubbles/Bubbles.component';
 import NewBubbles from './components/otherBubbles/NewBubbles';
 import { Contact } from './components/Contact/Contact.component';
 import WideNav from './WideNav/WideNav.component';

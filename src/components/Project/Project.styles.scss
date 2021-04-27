@@ -130,6 +130,12 @@
 
 @media (min-width: 700px) {
     .project-margin {
-        margin-bottom: 161px;
+        margin-bottom: 194px;
+
+        &.mern {
+            margin-bottom: 445px;
+        }
     }
+
+
 }
