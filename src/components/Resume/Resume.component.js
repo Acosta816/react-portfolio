@@ -28,9 +28,8 @@ const Resume = () => {
                 </defs>
 
 
-                <a href="https://drive.google.com/file/d/1C3o0udqxVk_V7s-x4Oc6zMt6PFHl_pnu/view?usp=sharing" target="_blank">
+                <a href="https://drive.google.com/file/d/1u4ext8pRFNQAJnN1sMJZRAhWOKUCohak/view?usp=sharing" target="_blank" rel="noreferrer">
                     <g className="topball">
-
                         <circle className="ball" cx="100" cy="8" r="4.5" stroke="none" strokeWidth="0" fill="red" />
                         { /*<rect width="15" height="6" x="94" y="7" fill="white" /> */}
                         <text className="resume-text" x="79.56%" y="30%" dominantBaseline="middle" strokeWidth="0" stroke="#000" fill="azure">Résumé</text>

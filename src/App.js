@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './App.scss';
 // import Avatar from './components/Avatar/Avatar';
@@ -14,6 +13,9 @@ import NewBubbles from './components/otherBubbles/NewBubbles';
 import { Contact } from './components/Contact/Contact.component';
 import WideNav from './WideNav/WideNav.component';
 import Resume from './components/Resume/Resume.component';
+
+
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -21,14 +23,14 @@ class App extends React.Component {
       menuIsOpen: false,
       appClicked: false,
     }
-  }
+  };
 
   updateAppState = (isMenuOpen) => {
     console.log(isMenuOpen);
     this.setState((ps) =>
       ({ menuIsOpen: isMenuOpen })
     )
-  }
+  };
 
   appIsClicked = () => {
     if (this.state.menuIsOpen && (this.state.appClicked === false)) {
@@ -37,7 +39,7 @@ class App extends React.Component {
     else {
       return
     }
-  }
+  };
 
   onInputChange = () => {
     this.setState((prevState) =>
@@ -45,7 +47,7 @@ class App extends React.Component {
       () => console.log(this.state.menuIsOpen)
     )
 
-  }
+  };
 
   skipAnimation = () => {
     document.getElementById("Main").classList.add("skip"); //speedup main content transition
@@ -56,14 +58,12 @@ class App extends React.Component {
     document.getElementById("ocean").classList.replace("ocean-transition", "speedup-ocean"); //speedup waves avatar-container
     document.getElementById("resume").classList.replace("ocean-transition", "speedup-ocean"); //speedup waves avatar-container
     document.getElementById("pumpkin").classList.add("hide");
-
-
-  }
+  };
 
   render() {
     return (
       <div id="home" onClick={this.appIsClicked} className="App">
-        <button id="pumpkin" className="pumpkin" onClick={() => this.skipAnimation()}>>>skip</button>
+        <button id="pumpkin" className="pumpkin" onClick={() => this.skipAnimation()}>{">>"}skip</button>
         <WideNav />
         <Menu onInputChange={this.onInputChange} menuIsOpen={this.state.menuIsOpen} />
         <Header />
