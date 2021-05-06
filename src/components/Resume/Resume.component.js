@@ -28,7 +28,7 @@ const Resume = () => {
                 </defs>
 
 
-                <a href="https://drive.google.com/file/d/1u4ext8pRFNQAJnN1sMJZRAhWOKUCohak/view?usp=sharing" target="_blank" rel="noreferrer">
+                <a href="https://drive.google.com/file/d/1EGm8YlQQwDYpIlB7zyA3g0Tg1oDLWIvT/view?usp=sharing" target="_blank" rel="noreferrer">
                     <g className="topball">
                         <circle className="ball" cx="100" cy="8" r="4.5" stroke="none" strokeWidth="0" fill="red" />
                         { /*<rect width="15" height="6" x="94" y="7" fill="white" /> */}
