@@ -41,7 +41,7 @@ const AboutMe = () => {
                 We'd purchase phones and tablets in bulk, update the firmware, unlock them, fix them etc. Then import to the Baja market & distribute at an affordable price.
                 <br/>
                 <br/>
-                Soon after, I met my wife, a CHEMIST, and we formed a small tech business making custom designs on photoshop and using PNEUMONIC SUBLIMATION to print phone cases and anything else custom.
+                Soon after, I met my wife, and we formed a small tech business making custom designs on photoshop and using PNEUMONIC SUBLIMATION to print phone cases and anything else custom.
                 We sold the company and moved back home to California where I worked as a Client Account Manager for GPI.
             </p>
 
